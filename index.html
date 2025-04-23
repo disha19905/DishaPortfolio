@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Portfolio</title>
+    <title>Disha Ram Satpute</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Your Name</h1>
+                <h1>Disha Satpute</h1>
             </div>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -25,25 +25,63 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Hi, I'm Your Name</h1>
-        <p>A passionate web developer.</p>
-        <a href="#contact" class="cta">Contact Me</a>
+        <h1>Hi, I'm Disha</h1>
+        <p>A passionate IT Student</p>
+    <br>    <a href="#contact" class="cta">Contact Me</a>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Write a short introduction about yourself here.</p>
-    </section>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello, I'm <strong>Disha Satpute</strong>! I am currently pursuing a Bachelor's degree in Information Technology. I am a passionate learner who thrives on challenges and loves exploring new technologies. My strengths lie in being hardworking, reliable, and an excellent timekeeper.</p>
 
+    <p>I pride myself on being receptive and approachable, and I enjoy working in collaborative environments where communication and teamwork are key. My ability to connect with people at all levels helps me understand diverse perspectives and contribute effectively to group projects.</p>
+
+    <p>Beyond academics, I actively take part in tech communities and coding events. I enjoy building web projects, exploring open-source contributions, and staying updated with the latest trends in the tech world. I believe in lifelong learning and strive to improve my skills every day.</p>
+
+    <p>In a nutshell, I describe myself as helpful, honest, and fair—someone who values integrity and consistency in both personal and professional life. I aim to grow into a skilled IT professional and make a positive impact through technology.</p>
+    <br>
+<br> <a href="https://github.com/disha19905/DishaPortfolio" target="_blank" class="github-link">View the Project on GitHub</a>
+    </section>
+<section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Bachelor of Science in Information Technology</strong><br>
+            S.K. College Of Science And Commerce,Nerul, University of Mumbai<br>
+            CGPA Of 1<sup>th</sup> Sem: <strong>8.6/10</strong><br>
+             CGPA Of 2<sup>th</sup> Sem: <strong>7.2/10</strong><br>
+             CGPA Of 3<sup>th</sup> Sem: <strong>9.0/10</strong><br>
+            2023 – 2026
+        </li>
+        <li><strong>HSC (12th Grade / Science)</strong><br>
+            V.K. Junior College , Panvel <br>
+            Percentage: <strong>69.60%</strong><br>
+            2020 – 2022
+        </li>
+        <li><strong>SSC (10th Grade)</strong><br>
+            K.V. High School , Panvel <br>
+            Percentage: <strong>85%</strong><br>
+            2019 – 2020
+        </li>
+    </ul>
+</section>
     <!-- Skills Section -->
     <section id="skills" class="section">
         <h2>Skills</h2>
         <ul>
             <li>HTML & CSS</li>
+            <li>Java Programming</li>
+            <li>C and Advanced C++</li>
+            <li>Python</li>
+            <li>MySQL (Database Management)</li>
+            <li>R Tool</li>
             <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
+           <li>Mobile App Development (Flutter)</li>
+          <li> Git & GitHub</li>
+          <li>VS Code </li>
+<li>Machine Learning (TensorFlow )</li>
+<li>Wireshark (Network packet analysis)</li>
+<li>Linux Command Line</li>
         </ul>
     </section>
 
@@ -52,16 +90,34 @@
         <h2>Projects</h2>
         <div class="projects-container">
             <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of the project.</p>
+                <h3>Responsive Portfolio Website</h3>
+                <p>I created this responsive portfolio website as part of a certified course using GitHub and Visual Studio.</p>
+<style>
+  .github-link {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .github-link:hover {
+    color: #e74c3c; /* changes on hover */
+  }
+</style>
+
+<a href="https://disha19905.github.io/DishaPortfolio/" target="_blank" class="github-link">
+  View the Project on GitHub
+</a>
             </div>
             <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of the project.</p>
+                <h3>Bus Ticket Booking Website</h3>
+                <p>The Bus Ticket Booking Website is an online platform that allows users to easily search for available buses and book tickets for their desired routes. The website aims to simplify the travel booking process by offering a user-friendly interface .</p>
+                <a href="#">Project Link</a>
             </div>
             <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Description of the project.</p>
+                <h3> Sign Language Alphabet Detector with Voice</h3>
+                <p>The Sign Language Alphabet Detector with Voice is an AI-based system designed to recognize American Sign Language (ASL) alphabets in real-time using a webcam. The system translates hand gestures into text and speaks the recognized letter aloud, providing an interactive experience for users who may be deaf or hard of hearing. This project aims to bridge communication gaps and assist in learning sign language.</p>
+                <a href="#">Project Link</a>
             </div>
         </div>
     </section>
@@ -69,7 +125,7 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <form id="contact-form">
+        <form id="contact-form" onsubmit="sendSMS(event)">
             <label for="name">Name</label>
             <input type="text" id="name" required>
             <label for="email">Email</label>
@@ -82,9 +138,27 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Disha Satpute. All rights reserved.</p>
+        <div>
+            <a href="https://github.com/disha19905" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/disha-satpute" target="_blank">LinkedIn</a> |
+            <a href="mailto:disha@example.com">Email</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Function to simulate sending SMS (For demo purpose, use an API like Twilio in production)
+        function sendSMS(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Here, you can integrate with an actual SMS service like Twilio
+            alert(`Message sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+        }
+    </script>
 </body>
 </html>
