@@ -1,5 +1,5 @@
 /* Resetting some basic defaults */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,31 +8,49 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f7fbfd;
+    color: #dcdcdc;  /* Light Gray for text */
+    background-color: #1e1e1e;  /* Dark Greyish Black for background */
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
 /* Styling for GitHub Link */
 .github-link {
-    color: #0077B5; /* GitHub's brand color */
-    text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Makes the text bold */
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    color: #2980b9;  /* Darker Blue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 .github-link:hover {
-    color: #333; /* Darker color when hovered */
-    text-decoration: underline; /* Underline on hover for better visibility */
+    color: #1f618d;  /* Even Darker Blue on hover */
+    text-decoration: underline;
 }
 
+/* CSS Animation for the Hero Section */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1, .hero p {
+    animation: fadeIn 1s ease-out;
+}
+
+.hero h1 {
+    animation-delay: 0.2s;
+}
+
+.hero p {
+    animation-delay: 0.5s;
+}
 
 /* Navigation */
 header {
-    background-color: #333;
+    background-color: #2c3e50;  /* Dark Blue-Grey for header */
     color: #fff;
     padding: 1rem 0;
 }
@@ -62,7 +80,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background: #333;
+    background: #2980b9;  /* Darker Blue for the hero background */
     color: #fff;
     text-align: center;
     padding: 80px 20px;
@@ -77,7 +95,7 @@ nav ul li a {
 }
 
 .hero .cta {
-    background-color: #70e1f0;
+    background-color: #1f618d;  /* Even Darker Blue for button */
     padding: 10px 20px;
     color: white;
     font-size: 1.1rem;
@@ -86,7 +104,7 @@ nav ul li a {
 }
 
 .hero .cta:hover {
-    background-color: #70e1f0;
+    background-color: #1c4e77;  /* Even Darker Blue on hover */
 }
 
 /* Section Styles */
@@ -99,6 +117,7 @@ nav ul li a {
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #fff;  /* White for headings */
 }
 
 ul {
@@ -112,15 +131,22 @@ ul {
 }
 
 .project-card {
-    background: white;
+    background: #2c3e50;  /* Dark background for project cards */
     padding: 20px;
     border-radius: 8px;
     width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .project-card h3 {
     font-size: 1.5rem;
+    color: #fff;  /* White for card titles */
 }
 
 form {
@@ -133,10 +159,12 @@ form input, form textarea {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #34495e;  /* Dark Grey for input fields */
+    color: #dcdcdc;  /* Light Grey for text */
 }
 
 form button {
-    background-color: #70e1f0;
+    background-color: #2980b9;  /* Darker Blue for button */
     padding: 10px;
     color: white;
     font-size: 1.1rem;
@@ -146,15 +174,24 @@ form button {
 }
 
 form button:hover {
-    background-color: #70e1f0;
+    background-color: #1f618d;  /* Even Darker Blue on hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #2c3e50;  /* Dark Blue-Grey for footer */
     color: #fff;
+}
+
+footer a {
+    color: #2980b9;  /* Darker Blue for links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1f618d;  /* Even Darker Blue on hover */
 }
 
 /* Media Queries for Responsiveness */
@@ -170,5 +207,14 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 10px 15px;
     }
 }
